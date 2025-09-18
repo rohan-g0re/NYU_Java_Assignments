@@ -7,7 +7,6 @@ public class BlackbodyRadiation {
         final double c  = 3.0e8;    
         final double kB = 1.381e-23;
 
-        // ν = c / λ
         double v = c / lambda;
 
         // numerator 2 h ν³
