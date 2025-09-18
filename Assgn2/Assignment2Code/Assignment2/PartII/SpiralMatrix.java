@@ -1,11 +1,16 @@
 public class SpiralMatrix {
 
     /**
+     * DocStrings from GPT: 
+     * 
      * Return the elements of a 2-D array in spiral order.
      *
      * @param m 2-D rectangular array (rows × cols).
      * @return 1-D array with all values arranged spirally.
      */
+	
+	
+	
     public static int[] spiralMatrix(int[][] m) {
 
         int rows = m.length;
@@ -57,7 +62,9 @@ public class SpiralMatrix {
             {17, 18, 19, 20}
         };
 
-        /* --- Part 1: print matrix row-by-row --- */
+//        --- Part 1: print matrix row-by-row ---
+        
+        
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 0; c < matrix[0].length; c++) {
                 System.out.printf("%3d", matrix[r][c]);
@@ -65,7 +72,9 @@ public class SpiralMatrix {
             System.out.println();
         }
 
-        /* --- Part 2: spiral traversal --- */
+//        --- Part 2: spiral traversal ---
+
+        
         int[] spiral = spiralMatrix(matrix);
 
         System.out.print("\nSpiral order: ");

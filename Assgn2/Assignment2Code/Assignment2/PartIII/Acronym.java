@@ -1,24 +1,38 @@
 public class Acronym {
 
     /**
+     * DocStrings from GPT: 
+     * 
+     * 
      * Convert a sentence to its acronym.
      * Words are separated by spaces; first letters are upper-cased.
      *
      * @param input full sentence
      * @return acronym in upper-case (e.g., "as soon as possible" → "ASAP")
      */
-    public static String createAcronym(String input) {
+    
+	
+	public static String createAcronym(String input) {
 
         if (input == null || input.isEmpty()) return "";
 
         StringBuilder acronym = new StringBuilder();
-        String[] words = input.trim().split(" +");   // one or more spaces
+        
+        
+//     one or more spaces
+        String[] words = input.trim().split(" +");   
 
         for (String w : words) {
+        	
+        	
             // ignore empty strings that can appear if there are extra spaces
-            if (!w.isEmpty())
+            
+        	if (!w.isEmpty())
                 acronym.append(Character.toUpperCase(w.charAt(0)));
+        	
         }
+        
+        
         return acronym.toString();
     }
 

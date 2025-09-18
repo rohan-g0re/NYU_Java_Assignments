@@ -1,6 +1,8 @@
 public class Leibniz {
 
     /**
+     * DocStrings from GPT: 
+     * 
      * Return the Leibniz‐series estimate of π after the requested number of terms.
      * S(n) = 4 · Σ_{k=0}^{n-1} [(-1)^k / (2k + 1)]
      */
@@ -8,8 +10,13 @@ public class Leibniz {
         double sum = 0.0;
 
         for (int k = 0; k < iterations; k++) {
-            // (-1)^k  →  flip sign every term
-            double term = (k % 2 == 0 ? 1.0 : -1.0) / (2 * k + 1);
+            
+        	
+        	// tried compressed if statements such as --> (-1)^k  →  flip sign every term
+            
+        	double term = (k % 2 == 0 ? 1.0 : -1.0) / (2 * k + 1);
+            
+            
             sum += term;
         }
         return 4.0 * sum;

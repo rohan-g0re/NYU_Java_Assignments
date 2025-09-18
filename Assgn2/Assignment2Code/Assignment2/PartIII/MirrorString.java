@@ -1,6 +1,8 @@
 public class MirrorString {
 
     /**
+     * DocStrings from GPT:
+     * 
      * Return the input followed by its reverse.
      * e.g. "hello" → "helloolleh"
      */
