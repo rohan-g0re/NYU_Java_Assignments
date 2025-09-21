@@ -127,13 +127,34 @@ public class ComplexNumber {
         ComplexNumber product = c1.multiply(c2);
         ComplexNumber quotient = c1.divide(c2); // Extra credit
 
-        System.out.println("First Complex Number (c1) is: " + c1.toString());
-        System.out.println("Second Complex Number (c2) is: " + c2.toString());
+        System.out.println("The Complex Numbers are --> c1 is: " + c1.toString() + " and c2 is: " + c2.toString());
+       
+        System.out.println();
+
         System.out.println("Sum = " + sum);
         System.out.println("Difference = " + difference);
         System.out.println("Product = " + product);
         System.out.println("Quotient = " + quotient); // Extra credit
-        System.out.println("Magnitude of c1 = " + c1.magnitude());
-        System.out.println("Magnitude of c2 = " + c2.magnitude());
+        
+        System.out.println();
+
+        System.out.println("Magnitude of c1 and c2 is --> " + c1.magnitude() + " and " + c2.magnitude() + " respectively.");
+        
+        System.out.println("Real part of c1 and c2 is --> " + c1.getReal() + " and " + c2.getReal() + "  respectively.");
+        
+        System.out.println("Imaginary part of c1 and c2 is --> " + c1.getImaginary() + " and " + c2.getImaginary() + "  respectively.");
+        
+        System.out.println();
+        
+        System.out.println("Setting the real and imaginary part of the numbers as 69");
+        
+        c1.setReal(69);
+        c2.setReal(69);
+
+        c1.setImaginary(69);
+        c2.setImaginary(69);
+        
+        System.out.println("The Complex Numbers after change are --> c1 is: " + c1.toString() + " and c2 is: " + c2.toString());
+
     }
 }
